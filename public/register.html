@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VulneraCheck</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="/register" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <a href="/login" class="login-link"
+          >Already have an account? Login here</a
+        >
+      </form>
+    </div>
+  </body>
+</html>
